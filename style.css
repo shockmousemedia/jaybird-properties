@@ -174,3 +174,16 @@ address {
   }
 /* Newsletter Signup */
 /* Main Page*/
+
+/* Service Pages General */
+.banner {
+  background: url("images/banner-background.png");
+}
+
+.banner-text {
+  text-align: center;
+  padding: 10% 10%;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+/* Service Pages General */
