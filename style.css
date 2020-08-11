@@ -146,6 +146,8 @@ address {
   border-radius: 5px;
   padding: 8px 20px;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 11px;
 }
 /* Hero Section */
 
