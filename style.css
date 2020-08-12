@@ -224,6 +224,10 @@ textarea {
 
 .submit {
   width: 40%;
+  background: #006DD4;
+  color: #FFFFFF;
+  outline: none;
+  border-radius: 5px;
 }
 
 input:focus,
