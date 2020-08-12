@@ -206,7 +206,7 @@ label {
   text-transform: uppercase;
 }
 
-input {
+input, select {
   width: 100%;
   height: 40px;
   box-sizing: border-box;
@@ -241,3 +241,10 @@ button:focus {
   padding: 15px 8px;
 }
 /* Service Pages General */
+
+/* Contact Page */
+.tenant-linkover {
+  font-weight: 600;
+  font-style: italic;
+}
+/* Contact Page */
