@@ -13,6 +13,7 @@ main {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 a {
@@ -58,6 +59,7 @@ h3 {
 h4 {
   padding: 0;
   margin: 0;
+  font-size: 13px;
 }
 
 p {
@@ -258,3 +260,40 @@ button:focus {
   margin: 20px 0;
 }
 /* Tenants Page */
+
+/* Buildings General */
+.build-infotext {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.build-infotext p {
+  display: inline-block;
+}
+
+.community-contain {
+  display: none;
+}
+
+.build-desc {
+  padding: 15px 8px;
+}
+
+.build-stats {
+  padding: 15px 8px;
+}
+
+.stat-label, .stat-actual {
+  display: inline-block;
+}
+
+.stat-actual {
+  float: right;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 200px;
+  padding: 20px 0;
+}
+/* Buildings General */
