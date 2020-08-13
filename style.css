@@ -291,6 +291,40 @@ button:focus {
   float: right;
 }
 
+.oth-prop {
+  display: flex;
+  padding: 15px 8px;
+  margin: 15px 8px;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+}
+
+.oth-prop-img {
+  flex-basis: 40%;
+}
+
+.oth-prop-name {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.oth-prop-text {
+  flex-basis: 60%;
+  padding: 0 10px;
+}
+
+.label, .actual {
+  display: inline-block;
+}
+
+.label p {
+  font-weight: 600;
+}
+
+.actual {
+  float: right;
+}
+
 iframe {
   max-width: 100%;
   max-height: 200px;
