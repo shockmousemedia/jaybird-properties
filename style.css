@@ -9,7 +9,7 @@ body {
 
 main {
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 68px;
 }
 
 img {
@@ -89,7 +89,7 @@ header {
   margin-left: 10px;
 }
 
-.navbar .nav-bar {
+.navbar .nav-links {
   display: none;
 }
 
