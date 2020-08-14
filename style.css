@@ -73,17 +73,14 @@ p {
 
 
 /* Navbar */
-
 header {
   width: 100%;
   position: fixed;
-  background: #fff;
 }
+
 .navbar {
-  padding: 10px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .navbar img {
@@ -92,16 +89,29 @@ header {
   margin-left: 10px;
 }
 
-.navbar .nav-links {
+.navbar .nav-bar {
   display: none;
 }
 
 .navbar a {
-
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
 .navbar a.ham-icon {
   color: #006DD4;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+}
+
+.active {
+  background-color: #006DD4;
+  color: white;
 }
 /* Navbar */
 
