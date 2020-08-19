@@ -413,17 +413,46 @@ iframe {
     display: inline-block;
     text-transform: uppercase;
     font-weight: 600;
-    line-height: 78px;
+    line-height: 90px;
   }
 
   .navbar img {
-    padding: 14px 20px;
+    padding: 20px 20px;
     padding-left: 0;
     height: 45px;
     width: auto;
     margin-left: 10px;
   }
   /* Navbar */
+
+  /* Homepage */
+  .hero img{
+    height: 70vh;
+  }
+
+  .building {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .building img {
+    max-width: 60%;
+  }
+
+  .building-text {
+    flex-basis: 30%;
+  }
+
+  .b-two {
+    flex-direction: row-reverse;
+  }
+
+  .signup-text {
+    padding: 150px 0;
+  }
+
+  /* Homepage */
 
   /* Buildings General */
   .build-main-contain {
