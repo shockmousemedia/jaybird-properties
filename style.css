@@ -263,6 +263,7 @@ button:focus {
 .serv-text {
   padding: 15px 8px;
 }
+
 /* Service Pages General */
 
 /* Contact Page */
@@ -348,3 +349,150 @@ iframe {
   padding: 20px 0;
 }
 /* Buildings General */
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+/* General */
+  body {
+    padding: 0 20px;
+  }
+/* General */
+
+/* Navbar */
+.navbar a {
+  padding: 14px 20px;
+  font-size: 17px;
+  display: block;
+}
+
+.navbar img {
+  height: 40px;
+  width: auto;
+  margin: 0;
+}
+
+.navbar a.ham-icon {
+  color: #006DD4;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+/* Navbar */
+/* Service Pages General */
+.banner-text {
+  padding: 5% 10%;
+  font-size: 1.75rem;
+}
+/* Service Pages General */
+}
+
+@media only screen and (min-width: 992px) {
+  /* Navbar */
+  .navbar a.ham-icon {
+    display: none;
+  }
+
+  .navbar .nav-links {
+    padding: 0 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: middle;
+  }
+
+  .navbar a {
+    padding: 0 20px;
+    font-size: 12px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 78px;
+  }
+
+  .navbar img {
+    padding: 14px 20px;
+    padding-left: 0;
+    height: 45px;
+    width: auto;
+    margin-left: 10px;
+  }
+  /* Navbar */
+
+  /* Service Pages General */
+  .banner-text {
+    padding: 4% 10%;
+    font-size: 1.75rem;
+  }
+
+  .form-container {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    padding-top: 30px;
+  }
+
+  form {
+    padding: 40px 30px;
+  }
+
+  .serv-text {
+    float: right;
+    width: 40%;
+    display: inline-block;
+    padding: 60px;
+  }
+  /* Service Pages General */
+
+  /* Accounting */
+  .acct-info {
+    padding-top: 30px;
+  }
+
+  .info-img {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .acct-graphics {
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .serv-graphic {
+    flex-basis: 20%;
+  }
+
+  .acct-consult {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .acct-consult button {
+  }
+  /* Accounting */
+
+  /* Footer */
+  .footer-main {
+    height: 80px;
+    font-weight: 600;
+  }
+  .contact {
+    float: left;
+    text-align: left;
+  }
+
+  .footer-links {
+    float: right;
+  }
+  /* Footer */
+}
