@@ -425,6 +425,50 @@ iframe {
   }
   /* Navbar */
 
+  /* Buildings General */
+  .build-main-contain {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .community-contain {
+    display: block;
+    flex-basis: 20%;
+    text-align: center;
+  }
+
+  .build-desc-stats {
+    flex-basis: 70%;
+  }
+
+  .build-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stat-left, .stat-right {
+    flex-basis: 45%;
+  }
+
+  .build-space-other {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .avail-space {
+    flex-basis: 40%;
+  }
+
+  .oth-prop-contain {
+    flex-basis: 35%;
+  }
+
+  iframe {
+    width: 100%;
+    max-height: 300px;
+  }
+  /* Buildings General */
+
   /* Service Pages General */
   .banner-text {
     padding: 4% 10%;
@@ -477,7 +521,12 @@ iframe {
     justify-content: space-between;
   }
 
+  .acct-consult-text {
+    flex-basis: 60%;
+  }
+
   .acct-consult button {
+    max-height: 45px;
   }
   /* Accounting */
 
