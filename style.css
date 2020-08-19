@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   letter-spacing: .5px;
   line-height: 1.3;
 }
@@ -33,8 +33,8 @@ button {
   font-size: 11px;
   font-weight: 400;
 }
-/* General */
 
+/* General */
 /* Text Settings */
 h1 {
   padding: 0;
@@ -69,9 +69,8 @@ p {
   font-size: .8rem;
   font-weight: 400;
 }
+
 /* Text Settings */
-
-
 /* Navbar */
 header {
   width: 100%;
@@ -113,8 +112,8 @@ header {
   background-color: #006DD4;
   color: white;
 }
-/* Navbar */
 
+/* Navbar */
 /* Footer */
 footer {
   text-align: center;
@@ -125,6 +124,7 @@ footer {
 footer i {
   color: #006DD4;
 }
+
 .footer-main {
   background-color: #000000;
   padding: 25px 30px;
@@ -161,11 +161,11 @@ address {
 }
 
 /* Footer */
-
 /* Main Page */
 .text {
   padding: 15px 10px;
 }
+
 /* Hero Section */
 .hero {
   display: block;
@@ -176,32 +176,32 @@ address {
   width: 100%;
   height: 175px;
 }
-/* Hero Section */
 
+/* Hero Section */
 /* Building Sections */
 .building img {
   width: 100%;
 }
+
 /* Building Sections */
-
 /* Newsletter Signup */
-  .signup {
-    background-image: url("images/skyline-img.png");
-    background-size: cover;
-    margin: 15px 0;
-  }
+.signup {
+  background-image: url("images/skyline-img.png");
+  background-size: cover;
+  margin: 15px 0;
+}
 
-  .signup-text {
-    text-align: center;
-    padding: 40px 10px;
-  }
+.signup-text {
+  text-align: center;
+  padding: 40px 10px;
+}
 
-  .signup-text button {
-    margin: 10px 0;
-  }
+.signup-text button {
+  margin: 10px 0;
+}
+
 /* Newsletter Signup */
 /* Main Page*/
-
 /* Service Pages General */
 .banner {
   background: url("images/banner-background.png");
@@ -265,20 +265,19 @@ button:focus {
 }
 
 /* Service Pages General */
-
 /* Contact Page */
 .tenant-linkover {
   font-weight: 600;
   font-style: italic;
 }
-/* Contact Page */
 
+/* Contact Page */
 /* Tenants Page */
 .rent-button {
   margin: 20px 0;
 }
-/* Tenants Page */
 
+/* Tenants Page */
 /* Buildings General */
 .build-infotext {
   text-align: center;
@@ -348,51 +347,51 @@ iframe {
   max-height: 200px;
   padding: 20px 0;
 }
+
 /* Buildings General */
-
-
-
-
-
 @media only screen and (min-width: 768px) {
-/* General */
+
+  /* General */
   body {
     padding: 0 20px;
   }
-/* General */
 
-/* Navbar */
-.navbar a {
-  padding: 14px 20px;
-  font-size: 17px;
-  display: block;
-}
+  /* General */
+  /* Navbar */
+  .navbar a {
+    padding: 14px 20px;
+    font-size: 17px;
+    display: block;
+  }
 
-.navbar img {
-  height: 40px;
-  width: auto;
-  margin: 0;
-}
+  .navbar img {
+    height: 40px;
+    width: auto;
+    margin: 0;
+  }
 
-.navbar a.ham-icon {
-  color: #006DD4;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-/* Navbar */
-/* Service Pages General */
-.banner-text {
-  padding: 5% 10%;
-  font-size: 1.75rem;
-}
-/* Service Pages General */
+  .navbar a.ham-icon {
+    color: #006DD4;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  /* Navbar */
+  /* Service Pages General */
+  .banner-text {
+    padding: 5% 10%;
+    font-size: 1.75rem;
+  }
+
+  /* Service Pages General */
 }
 
 @media only screen and (min-width: 992px) {
+
   /* Navbar */
   .navbar a.ham-icon {
     display: none;
@@ -423,10 +422,47 @@ iframe {
     width: auto;
     margin-left: 10px;
   }
-  /* Navbar */
 
+  .dropdown {
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  /* Navbar */
   /* Homepage */
-  .hero img{
+  .hero img {
     height: 70vh;
   }
 
@@ -453,13 +489,13 @@ iframe {
   }
 
   /* Homepage */
-
   /* Buildings General */
   .build-main-contain {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
   }
+
   .community-contain {
     display: block;
     flex-basis: 20%;
@@ -496,8 +532,8 @@ iframe {
     width: 100%;
     max-height: 300px;
   }
-  /* Buildings General */
 
+  /* Buildings General */
   /* Service Pages General */
   .banner-text {
     padding: 4% 10%;
@@ -521,8 +557,8 @@ iframe {
     display: inline-block;
     padding: 60px;
   }
-  /* Service Pages General */
 
+  /* Service Pages General */
   /* Accounting */
   .acct-info {
     padding-top: 30px;
@@ -557,13 +593,14 @@ iframe {
   .acct-consult button {
     max-height: 45px;
   }
-  /* Accounting */
 
+  /* Accounting */
   /* Footer */
   .footer-main {
     height: 80px;
     font-weight: 600;
   }
+
   .contact {
     float: left;
     text-align: left;
@@ -572,5 +609,6 @@ iframe {
   .footer-links {
     float: right;
   }
+
   /* Footer */
 }

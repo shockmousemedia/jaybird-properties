@@ -15,11 +15,25 @@
   <!-- Header Nav -->
   <header>
     <nav class="navbar">
-      <a href="/"><img width="1920" height="980" src="images/jaybird-logo.png" alt=""></a>
+      <a href="/" ><img width="1920" height="980" src="images/jaybird-logo.png" alt=""></a>
       <div class="nav-links" id="nav-links">
         <a href="about.html">About</a>
-        <a href="#">Properties <i class="fas fa-caret-right"></i></a>
-        <a href="#">Services <i class="fas fa-caret-right"></i></a>
+        <div class="dropdown prop-link">
+          <a href="#" class="dropdown-btn">Properties <i class="fas fa-caret-right"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Building 1</a>
+              <a href="#">Building 2</a>
+              <a href="#">Building 3</a>
+            </div>
+        </div>
+        <div class="dropdown serv-link">
+          <a href="#">Services <i class="fas fa-caret-right"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Building 8</a>
+            <a href="#">Building 9</a>
+            <a href="#">Building 10</a>
+          </div>
+        </div>
         <a href="contact.html">Contact Us</a>
       </div>
       <a href="javascript:void(0);" class="ham-icon" onclick="myFunction()">
