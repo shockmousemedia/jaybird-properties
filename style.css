@@ -393,6 +393,10 @@ iframe {
 @media only screen and (min-width: 992px) {
 
   /* Navbar */
+  header {
+    z-index: 100;
+  }
+
   .navbar a.ham-icon {
     display: none;
   }
@@ -462,8 +466,28 @@ iframe {
 
   /* Navbar */
   /* Homepage */
+  .hero {
+    position: relative;
+  }
+
   .hero img {
     height: 70vh;
+  }
+
+  .hero-textbox {
+    margin: 20px;
+    padding: 30px 10px;
+    max-width: 400px;
+    background-color: #000000;
+    opacity: .8;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .hero-textbox h1 {
+    font-size: 30px;
+    font-weight: 400;
   }
 
   .building {
@@ -472,12 +496,25 @@ iframe {
     justify-content: space-between;
   }
 
-  .building img {
-    max-width: 60%;
+  .building-text {
+    padding: 125px 50px;
   }
 
-  .building-text {
-    flex-basis: 30%;
+  .building-text::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #b2a786;
+    position: absolute;
+  }
+
+  .building-text h2 {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+
+  .building img {
+    max-width: 60%;
   }
 
   .b-two {
