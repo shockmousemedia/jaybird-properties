@@ -7,38 +7,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <script src="scripts.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <!-- Header Nav -->
-    <header>
-      <nav class="navbar">
-        <a href="/" ><img width="1920" height="980" src="images/jaybird-logo.png" alt=""></a>
-        <div class="nav-links" id="nav-links">
-          <a href="about.html">About</a>
-          <div class="dropdown prop-link">
-            <a href="#" class="dropdown-btn">Properties <i class="fas fa-caret-right"></i></a>
-              <div class="dropdown-content">
-                <a href="building1.html">Building 1</a>
-                <a href="building2.html">Building 2</a>
-                <a href="building3.html">Building 3</a>
-              </div>
-          </div>
-          <div class="dropdown serv-link">
-            <a href="#">Services <i class="fas fa-caret-right"></i></a>
-            <div class="dropdown-content">
-              <a href="tenants.html">Tenants</a>
-              <a href="accounting.html">Accounting</a>
-            </div>
-          </div>
-          <a href="contact.html">Contact Us</a>
-        </div>
-        <a href="javascript:void(0);" class="ham-icon" onclick="myFunction()">
-          <i class="fa fa-bars fa-lg"></i>
-        </a>
-      </nav>
-    </header>
-    <!-- Header Nav -->
+    <!-- Header -->
+    <div id="header"></div>
+    <!-- Header -->
 
     <!-- Main Content -->
     <main>
@@ -83,32 +68,7 @@
     <!-- Main Content -->
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-main">
-        <div class="contact">
-          <address class="">
-            <i class="fas fa-map-marker-alt"></i>
-            <a href="#">10721 Capitol Dr., Milwaukee, WI 53203</a>
-          </address>
-          <div class="phone">
-            <i class="fas fa-phone-alt"></i>
-            <p class="phone-num">(414)-141-4141</p>
-          </div>
-        </div>
-        <div class="footer-links">
-          <nav class="footer-nav">
-            <ul class="footer-nav-links">
-              <li><a href="/contact.html">Contact Us</a></li>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="footer-credits">
-        <div>&copy; Copyright 2020 Jaybird Properties. <a href="#">Website by Shockmouse Media</a></div>
-      </div>
-    </footer>
+    <div id="footer"></div>
     <!-- Footer -->
   </body>
 </html>

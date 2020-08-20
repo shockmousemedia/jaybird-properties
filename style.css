@@ -523,6 +523,16 @@ iframe {
 
   .signup-text {
     padding: 150px 0;
+    color: #ffffff;
+  }
+
+  .signup-text h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .signup-text h3 {
+    font-weight: 500;
   }
 
   /* Homepage */
