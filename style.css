@@ -415,6 +415,37 @@ iframe {
 }
 /* About Page */
 
+/* Accounting Page */
+.acct-graphics {
+  text-align: center;
+  padding: 10px 8px;
+}
+
+.acct-graphics h3 {
+  padding-bottom: 10px;
+}
+.acct-graphics p {
+  padding: 0 20px;
+}
+
+.serv-graphic {
+  padding-bottom: 20px;
+}
+.acct-consult {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.acct-consult h2 {
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.acct-consult button {
+  margin: 20px 0;
+}
+/* Accounting Page */
+
 @media only screen and (min-width: 768px) {
 
   /* General */
