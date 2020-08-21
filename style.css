@@ -221,6 +221,7 @@ address {
 .signup-text {
   text-align: center;
   padding: 40px 10px;
+  color: #fff;
 }
 
 .signup-text button {
