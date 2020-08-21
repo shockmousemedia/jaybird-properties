@@ -206,6 +206,10 @@ address {
   width: 100%;
 }
 
+.available-space {
+  display: none;
+}
+
 /* Building Sections */
 /* Newsletter Signup */
 .signup {
@@ -334,11 +338,29 @@ button:focus {
   float: right;
 }
 
+.oth-prop-contain {
+  background-color: #eeeeee;
+  padding: 5px 0;
+}
+
+.oth-prop-contain h3 {
+  padding: 10px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
 .oth-prop {
   display: flex;
-  padding: 15px 8px;
+  padding: 10px 8px;
+  padding-top: 0;
   margin: 15px 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-bottom: 2px solid #fff;
+}
+
+.oth-prop:last-of-type {
+  border: none;
 }
 
 .oth-prop-img {
