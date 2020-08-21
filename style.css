@@ -359,7 +359,7 @@ button:focus {
   border-bottom: 2px solid #fff;
 }
 
-.oth-prop:last-of-type {
+.last-prop {
   border: none;
 }
 
