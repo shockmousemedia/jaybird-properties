@@ -696,6 +696,12 @@ iframe {
     flex-basis: 40%;
   }
 
+  .available-space {
+    padding: 0 20px;
+    display: block;
+    max-width: 400px;
+  }
+
   .oth-prop-contain {
     flex-basis: 35%;
   }
@@ -753,9 +759,11 @@ iframe {
   }
 
   .acct-consult {
-    padding: 50px 0;
+    margin-bottom: 20px;
+    padding: 20px 10px;
     display: flex;
     justify-content: space-between;
+    text-align: left;
   }
 
   .acct-consult-text {
