@@ -311,6 +311,12 @@ button:focus {
 
 /* Tenants Page */
 /* Buildings General */
+
+.build-img-contain img {
+  max-height: 200px;
+  min-width: 100%;
+}
+
 .build-infotext {
   text-align: center;
   margin: 10px 0;
