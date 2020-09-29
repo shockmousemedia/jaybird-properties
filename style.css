@@ -35,27 +35,63 @@ button {
   font-weight: 400;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white {
+  color: #ffffff;
+}
+
+.blue {
+  color: #145593;
+  font-size: 14px;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+form label:after
+{
+    color: red;
+    content: " *";
+}
 /* General */
 /* Text Settings */
 h1 {
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 1.1em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h2 {
   padding: 0;
   margin: 0;
   margin-bottom: 1em;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.3em;
 }
 
 h3 {
   padding: 0;
   margin: 0;
+  font-weight: 300;
 }
 
 h4 {
@@ -198,7 +234,15 @@ address {
 
 .hero img {
   width: 100%;
-  height: 175px;
+  height: 200px;
+}
+
+.hero-textbox {
+  padding: 30px 10px;
+}
+
+.hero button {
+  font-weight: 600;
 }
 
 /* Hero Section */
@@ -207,8 +251,9 @@ address {
   width: 100%;
 }
 
-.available-space {
-  display: none;
+.building-text {
+  color: #595959;
+  font-weight: 500;
 }
 
 /* Building Sections */
@@ -225,6 +270,15 @@ address {
   color: #fff;
 }
 
+.signup-text h1 {
+  font-weight: 400;
+}
+
+.signup-text h3 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
 .signup-text button {
   margin: 10px 0;
 }
@@ -234,6 +288,10 @@ address {
 /* Service Pages General */
 .banner {
   background: url("images/banner-background.png");
+  background-size: cover;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 15px;
 }
 
 .banner-text {
@@ -291,6 +349,7 @@ button:focus {
 
 .serv-text {
   padding: 15px 8px;
+  color: #595959
 }
 
 .tenant-anchor {
@@ -330,8 +389,17 @@ button:focus {
   display: none;
 }
 
+.build-name h1 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .build-desc {
   padding: 15px 8px;
+}
+
+.build-desc p {
+  font-size: 14px;
 }
 
 .build-stats {
@@ -404,26 +472,36 @@ iframe {
   padding: 20px 0;
 }
 
+.available-space {
+  display: none;
+}
+
 /* Buildings General */
 
 /* About Page */
 .about-info {
   display: inline-block;
 }
-.about-addit-text {
-  padding: 0 8px;
-  padding-bottom: 20px;
-  display: block;
+
+.about-text h1 {
+  padding: 15px 0;
+  font-size: 28px;
 }
 
-.about-addit-text h3 {
-  padding: 10px 0;
-  text-transform: uppercase;
-  font-size: 14px;
+.addit-img {
+  position: relative;
+  margin: 15px 0;
 }
+
+
 /* About Page */
 
 /* Accounting Page */
+.info-text h1{
+  font-size: 20px;
+  color: #000000;
+  padding: 10px 0;
+}
 .acct-graphics {
   text-align: center;
   padding: 10px 8px;
@@ -442,7 +520,17 @@ iframe {
 
 .serv-graphic {
   padding-bottom: 20px;
+
 }
+
+.serv-graphic h3 {
+  font-weight: 500;
+}
+
+.serv-graphic p {
+  color: #595959;
+}
+
 .acct-consult {
   background-color: #eeeeee;
   text-align: center;
@@ -492,7 +580,7 @@ iframe {
   /* Navbar */
   /* Service Pages General */
   .banner-text {
-    padding: 5% 10%;
+    padding: 3% 10%;
     font-size: 1.75rem;
   }
 
@@ -675,6 +763,20 @@ iframe {
     justify-content: space-between;
   }
 
+  .build-img-contain img {
+    max-height: 550px;
+    min-width: 100%;
+  }
+
+  .build-name h1 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .build-desc p {
+    font-size: 15px;
+  }
+
   .community-contain {
     display: block;
     flex-basis: 20%;
@@ -721,8 +823,7 @@ iframe {
   /* Buildings General */
   /* Service Pages General */
   .banner-text {
-    padding: 4% 10%;
-    font-size: 1.75rem;
+
   }
 
   .form-container {
@@ -740,25 +841,46 @@ iframe {
     float: right;
     width: 40%;
     display: inline-block;
-    padding: 60px;
+    padding: 50px 60px;
+    font-size: .9375rem;
+  }
+
+  .serv-text p {
+    font-size: .9375rem;
   }
 
   /* Service Pages General */
   /* Accounting */
   .acct-info {
     padding-top: 30px;
+    height: auto;
+  }
+
+  .info-text h1 {
+    padding: 20px 0;
+    font-size: 32px;
+  }
+
+
+  .info-text::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #145593;
+    position: absolute;
   }
 
   .info-img {
-    width: 50%;
+    width: 49%;
     display: inline-block;
   }
 
   .acct-graphics {
-    padding: 50px 30px;
+    padding: 50px 0px;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   .serv-graphic {
@@ -782,6 +904,35 @@ iframe {
   }
 
   /* Accounting */
+
+  /* About Page */
+  .about-text {
+    font-size: 28px;
+  }
+
+  .about-text::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #145593;
+    position: absolute;
+  }
+
+  .about-text h1 {
+    padding: 20px 0;
+  }
+
+  .about-addit-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+
+  .addit-img {
+    flex-basis: 49%;
+  }
+  /* About Page */
+
   /* Footer */
   .footer-main {
     height: 80px;
